@@ -1,0 +1,21 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "octordle_wide_screen@hotmail.com"
+    }
+  },  
+  "manifest_version": 2,
+  "name": "Octordle Wide Screen",
+  "version": "1.1",
+  "description": "Forces widescreen mode whether you are able or not",
+  "content_scripts": [
+    {
+    "matches": [ "https://octordle.com/*" ],
+    "js": ["octordleWideScreen.js"],
+    "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "96": "logo.png"
+  }
+}
